@@ -1,0 +1,45 @@
+@charset "utf-8";
+*{
+    margin : 0 auto;
+    padding : 0;
+} 
+.section{
+    background-color : #2d2c2b;
+    border-top : 5px solid #eb6762;
+    height : 100%;
+}
+#h3{
+    color : white;
+    text-align: center;
+    font-size : 100%;
+}
+div.modal-body{
+    text-align: center;
+}
+.horse{
+    width : 30%;
+    height: 30%;
+    margin-bottom : 30px;
+}
+.button2{
+    text-align: center;
+    margin : 10px;
+}
+.textarea{
+    width : 65%;
+    background-color : #807c7c;
+    color : #d0d2d3;
+    padding :7px;
+}
+.textarea > img{
+    width : 65%;
+}
+#ok{
+    width : 100px;
+}
+.modal-content{
+    width : 80%;
+}
+.modal-body>p{
+    font-size : 90%;
+}
