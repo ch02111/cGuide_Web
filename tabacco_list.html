@@ -1,0 +1,198 @@
+<!doctype html>
+
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- 부트스트랩 CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <title>CIGUIDE</title>
+
+  <link rel="icon" href="img/logo.png">
+
+  <style>
+	@media screen and (max-width:600px){
+		body{
+			background:pink;
+		}
+	}
+	body{
+		background:white;
+		max-width:600px;
+		margin:0 auto;
+	}
+	#top{z-index:9999;width:100%;height:40px;background:white;position:fixed;max-width:600px;min-width:350px;}
+	#top .row .top_icon{text-align:center;float:left;margin-top:5px;}
+	#top. row .top_icon.category{padding-left:20px;}
+	#top. row .top_icon.user{padding-right:20px;}
+	#footer{width:100%;height:100px;background:#eb6761;padding:20px 30px;text-align:center;}
+	#bar_menu{opacity:1;position:absolute;left:0px;top: 35px;background: #ffffff;max-width:80px;z-index: 9999;}
+	#bar_menu .box{text-align:center;padding:25% 0;border-left:5px solid #ffffff;}
+	#bar_menu .box.on{border-left:5px solid #ec6762;}
+	#bar_menu .img img{width:40%;}
+	#bar_menu a{text-decoration:none !important;}
+	#bar_menu .box .text{color:#9e9b9f;font-size:8pt;margin-top:5px;}
+	#bar_menu .box .text.on{color:#ec6762;}
+	#bar_menu.on{opacity:0;}
+	#footer{padding-bottom:150px;}
+	#bottom_menu{opacity:0;max-width:600px;min-width:350px;position:fixed !important;z-index: 9999;background: white;height: 50px;width:100%;bottom: 0px;}
+	#bottom_menu .bottom_box{width:25%;text-align:center;}
+	#bottom_menu .bottom_box .img{margin-top:3px;height:25px;}
+	#bottom_menu .bottom_box .img img{width:20px;}
+	#bottom_menu .bottom_box .text{color:#9e9b9f;font-size:8pt;margin-top:5px;}
+	#bottom_menu .bottom_box .text.on{color:#ec6762;}
+	#bottom_menu.on{opacity:1;}
+  </style>
+ </head>
+  <body>
+      <!-- 네비게이션 메뉴 -->
+    	<div id="top" class="container-fluid">
+    		<div class="row">
+    			<div class="top_icon category col-xs-2">
+    				<img src="http://jjeun.com/ciguide/img/category.png" id="category" style="width:25px;padding-top:3px;">
+    				<div id="bar_menu" class="on">
+    					<a href="/mypage/mypage_smoking.html">
+    						<div class="box" style="margin-top:30px;">
+    							<div class="img"><img src="http://jjeun.com/ciguide/img/user_icon.png"></div>
+    						</div>
+    					</a>
+    					<a href="#">
+    						<div class="box">
+    							<div class="img"><img src="http://jjeun.com/ciguide/img/map.png"></div>
+    							<div class="text">MAP</div>
+    						</div>
+    					</a>
+    					<a href="#">
+    						<div class="box">
+    							<div class="img"><img src="http://jjeun.com/ciguide/img/ci.png"></div>
+    							<div class="text">INFO</div>
+    						</div>
+    					</a>
+    					<a href="#">
+    						<div class="box">
+    							<div class="img"><img src="http://jjeun.com/ciguide/img/law.png"></div>
+    							<div class="text">LAW</div>
+    						</div>
+    					</a>
+    					<a href="#">
+    						<div class="box">
+    							<div class="img"><img src="http://jjeun.com/ciguide/img/notice.png"></div>
+    							<div class="text">NOTICE</div>
+    						</div>
+    					</a>
+    					<a href="#">
+    						<div class="box">
+    							<div class="img"><img src="http://jjeun.com/ciguide/img/term.png"></div>
+    							<div class="text">TERMS</div>
+    						</div>
+    					</a>
+    					<div style="background:#ffffff;height:300px;">
+    					</div>
+    				</div>
+    			</div>
+    			<div class="top_icon logo col-xs-8">
+    				<a href="./">
+    					<img src="http://jjeun.com/ciguide/img/logo.png" style="width:30px;">
+    				</a>
+    			</div>
+    			<div class="top_icon user col-xs-2">
+    				<img src="http://jjeun.com/ciguide/img/user.png" style="width:25px;padding-top:3px;">
+    			</div>
+    		</div>
+    	</div>
+      <br>
+      <hr color = "black" width = "100%" size = "100px">
+
+      <!--푸터-->
+      <div id="footer">
+    		<div>
+    			<img src="http://jjeun.com/ciguide/img/logo.png" style="text-align:center;width:20px;">
+    		</div>
+    		<span style="color:white;font-size:7pt;">Team.DaesaeCoding<br><span style="color:#b7b7b7;">copyright2019CIGUIDE all righs reserved.</span></span>
+    		<div style="height:50px;"></div>
+    	</div>
+  </body>
+</html>
+
+<script>
+
+  $(document).ready(function() {
+
+  	$('#category').click(function(){
+
+  		$('#bar_menu').toggleClass('on');
+
+  		$('#bottom_menu').toggleClass('on');
+
+
+
+  		var category = $("#category").attr("src");
+
+  		var src='';
+
+
+
+  		if(category == "http://jjeun.com/ciguide/img/category.png"){
+
+  			src = "http://jjeun.com/ciguide/img/category_on.png";
+
+  		}else{
+
+  			src = "http://jjeun.com/ciguide/img/category.png";
+
+  		}
+
+  		$('#category').attr("src", src);
+
+
+
+  	});
+
+
+
+  	$("#bar_menu .box:not(:first)").hover(function() {
+
+  		$(this).addClass("on");
+
+  		$(this).children(".text").addClass("on");
+
+  		$(this).children('.img').children("img").attr("src",$(this).children('.img').children("img").attr("src").replace(".png","_on.png"));
+
+  	}, function(){
+
+  		$(this).removeClass("on");
+
+  		$(this).children(".text").removeClass("on");
+
+  		$(this).children('.img').children("img").attr("src",$(this).children('.img').children("img").attr("src").replace("_on.png",".png"));
+
+  	});
+
+
+
+  	$("#bottom_menu .bottom_box").hover(function() {
+
+  		$(this).children(".text").addClass("on");
+
+  		$(this).children('.img').children("img").attr("src",$(this).children('.img').children("img").attr("src").replace(".png","_on.png"));
+
+  	}, function(){
+
+  		$(this).children(".text").removeClass("on");
+
+  		$(this).children('.img').children("img").attr("src",$(this).children('.img').children("img").attr("src").replace("_on.png",".png"));
+
+  	});
+
+  });
+
+</script>
