@@ -16,14 +16,18 @@
       #NOTICE_top .row .text{text-align:center;margin-top:10px;color:#ffffff;}
       #POST_list {width:100%;height:55px;margin:5px;padding-bottom: 2px; border-bottom: 2px solid #f5f5f5;}
       #POST_list .Category{font-size:15px;color:#ec6762;font-weight:500;}
-      #POST_list .title{font-size:15px;color:#000000;font-weight:500;}
+      #POST_list .title{font-size:15px;color:#000000;fon t-weight:500;}
       #POST_list .Date{font-size:15px;color:#606060;font-weight:500;}
+      #SEARCH_area {padding: inherit;}
+      #SEARCH_area .cigaName {text-align: center;}
+      #SEARCH_area .btn_search {margin-top : auto;}
     </style>
 
   </head>
   <body>
     <div id = "NOTICE_top" class = "container-fluid">
       <div class = "row">
+        <!--메뉴 아이콘-->
         <div class = "col-xs-1">
           <div class = "ikon">
             <a href = "#">
@@ -31,11 +35,24 @@
             </a>
           </div>
         </div>
+        <!--메뉴바 텍스트-->
         <div class = "col-xs-10">
           <div class = "text">
             Information
           </div>
         </div>
-        <div class = "col-xs-1">
+      </div>
+    </div>
+    <div id = "SEARCH_area" class = "container-fluid">
+      <!--검색어 입력-->
+      <div class = "col-xs-1">
+        <input type = "text" name = "cigaName">
+      </div>
+      <br>
+      <div class = "col-xs-10">
+        <div class = "btn_search">
+          <button>검색</button>
+    </div>
+
   </body>
 </html>
