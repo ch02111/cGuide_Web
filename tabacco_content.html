@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- 부트스트랩 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <title>tabacco_content</title>
+
+    <style>
+    body{
+      background:black;
+  		max-width:600px;
+  		margin:0 auto;
+      font-family:"NotoSans-Regular";
+    }
+
+    #top{width:100%;height:150px;background:white;max-width:600px;min-width:350px;}
+    #top_box{width:500px;height:150px;background:white; position:absolute; top:40px; margin-left:32.5px;}
+    #top_box h2{text-align:center; font-size:25px;}
+    #top_box p{text-align:center; font-size:20px;}
+
+    #content{width:100%;height:250px;background:#ec6762;max-width:600px;min-width:350px;}
+    #content p{text-align:center; font-size:20px; margin-top:45px;}
+    #content .content_inner{width:565px; background:white;}
+    #content .content_inner p{text-align:left; font-size:20px; margin-top:0px; padding:5px;}
+
+    #bottom{width:100%;height:550px;background:white;max-width:600px;min-width:350px;}
+    #bottom .next{width:180px; height:50px; background:#ec6762;
+    color:#fff; font-size:20px; border:none; margin:20px 0 0 200px;}
+    #bottom .list1{font-size:20px; margin-left:-40px;}
+    #bottom .list1 img{margin-top:-5px;}
+    #bottom .list1 li{list-style:none; margin-top:20px;}
+    #bottom p{ margin-top:70px;}
+
+  </style>
+  </head>
+  <body>
+  <!-- 상단 -->
+  <div id="top" class="container-fluid">
+    <div class="top_icon category col-xs-2">
+      <a href="#"><img src="img/left.png" id="back" style="width:40px;padding-top:3px;"></a>
+    </div>
+    <div id="top_box">
+      <h2><b>필라멘트 하이브리드5</b></h2>
+      <img src="img/star3.png" style="width:250px; margin-left:120px;">
+      <p>가격:4,500원</p>
+    </div>
+  </div>
+
+  <!-- 중간 자홍색 박스 -->
+  <div id="content" class="container-fluid">
+    <p>
+    타르:5.0mg<br>
+    니코틴:0.4mg<br>
+    캡슐형 담배
+    </p>
+    <div class="content_inner">
+      <p>
+      개발자 알림<br>
+      타르 5mm로 목넘김이 쎄지 않은 캡슐형 담배이므로 남녀 모두 좋아하는 담배이다.</p>
+    </div>
+  </div>
+
+  <!-- 하단 -->
+  <div id="bottom" class="container-fluid">
+      <p style="font-size:20px; margin-top:10px;">세부평가</p>
+      <div class="star">
+        <ul class="list1">
+          <li>맛<img src="img/star3.png" style="width:180px; margin-left:40px;">3점</li>
+          <li>향<img src="img/star4.png" style="width:180px;  margin-left:40px;">4점</li>
+          <li>흡입력<img src="img/star3.png" style="width:180px;">3점</li>
+          <li>디자인<img src="img/star4.png" style="width:180px;">4점</li>
+          <li>추천도<img src="img/star2.png" style="width:180px;">2점</li>
+        </ul>
+      </div>
+      <p style="color:#999;">*시가이드 관계자들이 객관적으로 평가한 세부평가임을 알려드립니다.</p>
+      <a href="#"><input type="button" value="다음" class="next"></input></a>
+  </div>
+
+
+  </body>
+</html>
