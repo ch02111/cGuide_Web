@@ -21,17 +21,7 @@
   <link rel="icon" href="img/logo.png">
 
   <style>
-	@media screen and (max-width:600px){
-		body{
-			background:pink;
-		}
-	}
-	body{
-		background:white;
-		max-width:600px;
-		margin:0 auto;
-	}
-  #top{z-index:9999;width:100%;height:45px;background:white;position:fixed;max-width:600px;min-width:350px;border-bottom:1px solid #E6E6E6;}
+  #top{z-index:9999;width:100%;height:45px;background:white;position:fixed;border-bottom:1px solid #E6E6E6;}
   #top .row .top_icon{text-align:center;float:left;margin-top:5px;}
   #top .row .top_icon.category{padding-left:20px;}
   #top .row .top_icon.user{padding-right:20px;}
@@ -56,7 +46,7 @@
   #search_menu .row .top_icon{text-align:center;margin-top:5px;}
   #search_menu .row .top_icon.search{position:absolute; right:0px; border:1px solid red;}
 
-  .tabacco_div {border : 1px solid black; width : 600px; height : 160px;}
+  .tabacco_div {border : 1px solid black; width : 100%; height : 160px;}
   .tabacco_img {height: 90px; padding-left:5px;}
   .tabacco_text {font-family: 'Noto Sans KR', sans-serif;text-align: center;}
 
@@ -149,14 +139,13 @@
               <option value = "3">가격 높은 순</option>
             </select>
           </div>
-          <div class="top_icon search col-xs-2">
+          <div class="top_icon search" style="float:right;">
             <a href = "#">
               <img src = "img/search.png" style = "width : 40px;" class = "search">
             </a>
           </div>
+            <input size = "84" type = "text">
         </div>
-        <p>
-        <input size = "84" type = "text">
         <!--담배 리스트-->
         <div class = "tabacco_div">
           <img src = "img/parliament_hybrid5.jpeg" width = "100px">
