@@ -21,7 +21,8 @@
   <link rel="icon" href="img/logo.png">
 
   <style>
-  #top{z-index:9999;width:100%;height:45px;background:white;position:fixed;border-bottom:1px solid #E6E6E6;}
+  * {font-family : 'Noto Sans KR';}
+  #top{z-index:9999;width:100%;height:40px;background:white;position:fixed;}
   #top .row .top_icon{text-align:center;float:left;margin-top:5px;}
   #top .row .top_icon.category{padding-left:20px;}
   #top .row .top_icon.user{padding-right:20px;}
@@ -125,27 +126,25 @@
       <hr align = "center" width = "100%" size = "40px" color = "pink">
       <!--검색-->
         <div class = "search_menu">
-          <div class = "search_menu col-xs-8">
-            <select name = "order_Country">
+          <span>
+            <select name = "order_Country" style = "width : 80px;">
               <option value = "1">나라별</option>
               <option value = "2">대한민국</option>
               <option value = "3">일본</option>
               <option value = "4">미국</option>
               <option value = "5">프랑스</option>
             </select>
-            <select name = "order_Price">
+            <select name = "order_Price" style = "width : 80px;">
               <option value = "1">가격순</option>
               <option value = "2">가격 낮은 순</option>
               <option value = "3">가격 높은 순</option>
             </select>
+          </span>
+          <div class="top_icon search" style="float:right";>
+            <input type = "image" src = "img/search.png" width = "35px">
           </div>
-          <div class="top_icon search" style="float:right;">
-            <a href = "#">
-              <img src = "img/search.png" style = "width : 40px;" class = "search">
-            </a>
-          </div>
-            <input size = "84" type = "text">
-        </div>
+            <input style = "float:right; width : 100px;" type = "text">
+        </div><br><br>
         <!--담배 리스트-->
         <div class = "tabacco_div">
           <img src = "img/parliament_hybrid5.jpeg" width = "100px">
